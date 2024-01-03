@@ -1,4 +1,3 @@
-// server component with DB queries
 import { sql } from '@vercel/postgres';
 import {
   CustomerField,
