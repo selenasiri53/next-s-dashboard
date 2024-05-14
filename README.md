@@ -19,3 +19,17 @@ Setting up the database:
     - Install the vercel/postgres SDK: $ npm install @vercel/postgres
     - Seed the database with an initial 10 instances of customers & data in scripts/seed.js
     - hide secret key
+
+
+Authentication setup
+$ npm install next-auth@beta
+
+app/lib/actions.ts
+auth.ts
+middleware.ts
+sidenav.tsx (signout)
+______________________________________________________________
+Sign in:
+
+Email: user@nextmail.com
+Password: 123456
