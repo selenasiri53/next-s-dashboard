@@ -28,8 +28,7 @@ app/lib/actions.ts
 auth.ts
 middleware.ts
 sidenav.tsx (signout)
-______________________________________________________________
-Sign in:
 
+Sign in:
 Email: user@nextmail.com
 Password: 123456
