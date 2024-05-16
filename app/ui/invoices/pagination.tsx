@@ -19,7 +19,6 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
     return `${pathname}?${params.toString()}`;
   };
 
-
   return (
     <>
       <div className="inline-flex">
