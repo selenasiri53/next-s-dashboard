@@ -79,8 +79,19 @@ export async function updateInvoice(id: string, formData: FormData) {
 }
 
 export async function deleteInvoice(id: string) {
+  throw new Error('Failed to Delete Invoice');
+
+  // Unreachable original code block (lines 85-86)
   await sql`DELETE FROM invoices WHERE id = ${id}`;
   revalidatePath('/dashboard/invoices');
+
+  try {
+    await sql`DELETE FROM invoices WHERE id = ${id}`;
+    revalidatePath('/dashboard/invoices');
+    return { message: 'Deleted Invoice' };
+  } catch (error) {
+    return { message: 'Database Error: Failed to Delete Invoice' };
+  }
 }
 
 // console.log(typeof rawFormData.amount); -- shows a string returned, because the input (even a #) is saved as a string
