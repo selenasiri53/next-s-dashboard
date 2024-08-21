@@ -1,4 +1,4 @@
-## Next.js App Router Course - Starter
+## Next.js App Router Starter
 
 In package.json add seed to script
 run: 
